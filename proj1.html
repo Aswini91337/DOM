@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+     <script>
+        
+  </script>
+
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src="https://static.toiimg.com/thumb/imgsize-23456,msid-110533830,width-600,resizemode-4/110533830.jpg" alt="Profile Picture">
+        <img class="card-img" src="https://i.pinimg.com/736x/ef/32/62/ef32624d6e3f9c82c5e5e9a39cdb95d9.jpg"
+        <h1>allu arjun</h1>
+        <h5>Stranger</h5>
+        <h1>dhoni</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="remove">Unfriend</button>
+            <button id="add">Add Friend</button>
+        </div> 
+    </div>
+
+    <script>
+        var stat = document.querySelector("h5"); // Select using ID for better accuracy
+        var addFriend = document.querySelector("#add");
+        var unFriend = document.querySelector("#remove");
+
+        addFriend.addEventListener("click", function(){
+            stat.innerHTML = "Friends";
+            stat.style.color = "green";
+        });
+
+        unFriend.addEventListener("click", function(){
+            stat.innerHTML = "Stranger";
+            stat.style.color = "red";
+        });
+    </script>
+
+    <!-- <script src="./solution.js" onclick=""></script> -->
+    
+</html>
